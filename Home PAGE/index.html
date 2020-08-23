@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/freshfork/p5.EasyCam@1.0.10/p5.easycam.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="img/colexo-logo-icon.svg" type="image/svg">
+    <title>Colexo</title>
+</head>
+<body>
+<div class="header-back">
+    <header>
+        <div class="logo-container">
+            <img class="logo-image" src="img/colexo-logo-icon.svg" alt="Logo">
+            <div class='colexo-text'>Opti-Bot</div>
+            
+        </div>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="#feature1">Simulation</a></li>
+                <li><a class="nav-link" href="#highlight2">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="log">
+            <div class="vl"></div>
+            <a href="#bottom"><button class="getStarted">Learn More</button></a>
+        </div>
+    </header>
+</div>
+
+    <main>
+        <section class="present">
+            <div class="introduction">
+                <div class="intro-text">
+                    <h1 class="mainHeader">WELCOME TO OPTI-BOT</h1>
+                    <h5 class="sub">Build the best robot together.</h5>
+                    <p class="subHeader">Create the best robot based of four factors. Create and design robots perfect to take into a sumo battle.</p>
+                </div>
+                <div class="intro-img">
+                    <img class="mainimg" src="img/RightHandImage.png" alt="Main Img">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+
+    <section class="progress">
+    <div class="progressmain">
+        <div class="progress-text">
+			<h2 class="progressbar">Habitability Meter:</h2>
+			<p id ="percent"></p>
+				<style>#percent{font-size: 30px; background: -webkit-linear-gradient(180deg, #DDB011 0%, #F7EF8A 35.94%, #D2AC47 71.88%, #EDC967 100%);
+                -webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;}
+				</style>
+			</h2>
+        </div>
+     <!--   <div class="progress-bar"></div -->
+    </div>
+    </section>
+    </section>
+    
+    <section class="sim-container">
+            <img id="robot" src="data/robotmain.png" alt="bot">
+            <div class="simbuttons">
+            <button id="addW" class="addWheels" onclick="addWheels();">Upgrade Wheels</button>
+            <button id="minW" class="minWheels" onclick="minWheels();">Degrade Wheels</button>
+            <button id="addR" class="addRamp" onclick="addRamp();">Upgrade Ramp</button>
+            <button id="minR" class="minRamp" onclick="minRamp();">Degrade Ramp</button>
+            <button id="addWe" class="addWeight" onclick="addWeight();">Increase Weight</button>
+            <button id="minWe" class="minWeight" onclick="minWeight();">Decrease Weight</button>
+            <button id="addS" class="addSpeed" onclick="addSpeed();">Increase Speed</button>
+            <button id="minS" class="minSpeed" onclick="minSpeed();">Decrease Speed</button>
+
+            </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
